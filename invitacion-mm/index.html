@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M & M</title>
+    <link rel="icon" type="image/png" href="https://images.icon-icons.com/1661/PNG/512/12135kissmark_110383.png">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ════════════ OVERLAY ════════════ -->
+<div id="overlay">
+
+    <!-- Fase 1: corazón -->
+    <div id="ov-intro">
+        <div id="ov-heart-big">♥</div>
+    </div>
+
+    <!-- Fase 2: invitación -->
+    <div class="ov-box" id="ov-box">
+        <span class="ov-heart">♥</span>
+        <div class="ov-names">Maiten</div>
+        <div class="ov-question">Estás siendo cordialmente invitada a una salida romántica con tu novio ¿Aceptás esta invitación?</div>
+        <div class="ov-btns">
+            <button id="btn-si" onclick="acceptInvite()">Sí &nbsp;♥</button>
+            <button id="btn-no">No</button>
+        </div>
+    </div>
+
+</div>
+
+<!-- ════════════ HERO ════════════ -->
+<section id="hero">
+    <div class="petals-container" id="petals"></div>
+    <div class="hero-content">
+        <div class="hero-eyebrow">una celebración de amor</div>
+        <div class="hero-names">M &amp; M</div>
+        <div class="hero-sub">Martín &amp; Maiten</div>
+        <div class="divider">
+            <div class="line"></div><div class="dot"></div><div class="line"></div>
+        </div>
+        <div class="hero-title">
+            <span id="hero-toggle" class="hero-toggle">9 meses de novios</span>
+        </div>
+    </div>
+    <div class="scroll-cue" onclick="document.getElementById('contador').scrollIntoView({behavior:'smooth'})">
+        <span>seguir</span>
+        <div class="arrow"></div>
+    </div>
+</section>
+
+<div id="contador" class="full-bleed">
+    <div class="inner" style="text-align:center">
+        <div class="eyebrow fi">Todavia es una sorpresa</div>
+        <div class="sec-title fi">Todavia es un secreto 🤫</div>
+    </div>
+</div>
+<!-- 
+    ════════════ CONTADOR ════════════ 
+    <div id="contador" class="full-bleed">
+        <div class="inner" style="text-align:center">
+            <div class="eyebrow fi">el tiempo vuela cuando estás con vos</div>
+            <div class="sec-title fi">Nuestro tiempo juntos</div>
+            <div class="counters-grid fi">
+
+                <div class="counter-card">
+                    <div class="cnt-num" id="dias-novios">—</div>
+                    <div class="cnt-unit">días</div>
+                    <div class="cnt-label">de novios</div>
+                </div>
+
+                <div class="counter-card">
+                    <div class="cnt-num" id="dias-salida">—</div>
+                    <div class="cnt-unit">días</div>
+                    <div class="cnt-label">de nuestra primera salida</div>
+                </div>
+
+                <div class="counter-card">
+                    <div class="cnt-num" id="dias-conocidos">—</div>
+                    <div class="cnt-unit">días</div>
+                    <div class="cnt-label">de conocernos</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+     ════════════ AGENDA ════════════ 
+    <div id="agenda" class="full-bleed">
+        <div class="inner" style="text-align:center">
+            <div class="eyebrow fi">lo que viene</div>
+            <div class="sec-title fi">El plan del día</div>
+            <div class="date-badge fi">21 · Mayo · 2026</div>
+
+            <div class="agenda-program">
+                <div class="ap-item">
+                    <div class="ap-time">18:00</div>
+                    <div class="ap-content">
+                        <div class="ap-icon">🌸</div>
+                        <div class="ap-title">Encuentro en nuestro lugar</div>
+                        <div class="ap-desc">El inicio de una noche muy especial</div>
+                    </div>
+                </div>
+                <div class="ap-item">
+                    <div class="ap-time">19:30</div>
+                    <div class="ap-content">
+                        <div class="ap-icon">🥂</div>
+                        <div class="ap-title">Brindis por nosotros</div>
+                        <div class="ap-desc">Por todo lo que construimos y lo que viene</div>
+                    </div>
+                </div>
+                <div class="ap-item">
+                    <div class="ap-time">20:30</div>
+                    <div class="ap-content">
+                        <div class="ap-icon">🕯️</div>
+                        <div class="ap-title">Cena romántica</div>
+                        <div class="ap-desc">Una mesa solo para los dos</div>
+                    </div>
+                </div>
+                <div class="ap-item">
+                    <div class="ap-time">22:00</div>
+                    <div class="ap-content">
+                        <div class="ap-icon">🌙</div>
+                        <div class="ap-title">Paseo bajo las estrellas</div>
+                        <div class="ap-desc">De la mano, como siempre</div>
+                    </div>
+                </div>
+                <div class="ap-item">
+                    <div class="ap-time">23:00</div>
+                    <div class="ap-content">
+                        <div class="ap-icon">🎁</div>
+                        <div class="ap-title">La sorpresa ✨</div>
+                        <div class="ap-desc">Eso no se cuenta… ya lo vas a ver</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     ════════════ COUNTDOWN ════════════
+    <div id="countdown" class="full-bleed">
+        <div class="inner" style="text-align:center">
+            <div class="eyebrow fi" style="color:var(--gold);opacity:.7">nos encontramos en</div>
+            <div class="sec-title fi" style="color:white">9 de Junio, 2026</div>
+
+            <div class="cd-grid fi">
+                <div class="cd-unit">
+                    <div class="cd-num" id="cd-days">--</div>
+                    <div class="cd-label">días</div>
+                </div>
+                <div class="cd-sep">:</div>
+                <div class="cd-unit">
+                    <div class="cd-num" id="cd-hours">--</div>
+                    <div class="cd-label">horas</div>
+                </div>
+                <div class="cd-sep">:</div>
+                <div class="cd-unit">
+                    <div class="cd-num" id="cd-mins">--</div>
+                    <div class="cd-label">minutos</div>
+                </div>
+                <div class="cd-sep">:</div>
+                <div class="cd-unit">
+                    <div class="cd-num" id="cd-secs">--</div>
+                    <div class="cd-label">segundos</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    ════════════ CARTA ════════════ 
+    <div id="carta" class="section-wrap" style="text-align:center">
+        <div class="eyebrow fi">desde el corazón</div>
+        <div class="sec-title fi">Para vos</div>
+        <div class="sec-sub fi">Algunas cosas que no siempre se dicen pero se sienten</div>
+
+        <div class="letter fi">
+            <div class="letter-body">
+                Hace un año apareció alguien que cambió la forma en que veo el mundo.
+                No lo planeé, no lo busqué especialmente —&nbsp;simplemente pasó,
+                como pasan las cosas que realmente importan.
+                <br><br>
+                Hoy, con 9 meses de novios y 12 de conocernos, solo puedo decir una cosa:
+                gracias por elegirme cada día. Por las charlas que no terminan,
+                por los silencios que no incomodan, por hacerme reír cuando más lo necesito.
+                <br><br>
+                Esto es solo el principio. Y yo quiero estar en cada capítulo.
+            </div>
+            <div class="letter-sign">Con todo mi amor, M ♥</div>
+        </div>
+    </div>
+
+     ════════════ GALERÍA ════════════ 
+    <div id="galeria" class="full-bleed">
+        <div class="inner" style="text-align:center">
+            <div class="eyebrow fi">nuestros momentos</div>
+            <div class="sec-title fi">Nuestra galería</div>
+            <div class="sec-sub fi">Los recuerdos que guardamos</div>
+
+            <div class="gallery-grid fi">
+                <div class="g-item"><div class="g-ph"><div class="ico">📷</div><div class="lbl">tu foto favorita</div></div></div>
+                <div class="g-item"><div class="g-ph"><div class="ico">🌸</div></div></div>
+                <div class="g-item"><div class="g-ph"><div class="ico">✨</div></div></div>
+                <div class="g-item"><div class="g-ph"><div class="ico">🥂</div></div></div>
+                <div class="g-item"><div class="g-ph"><div class="ico">🌙</div></div></div>
+                <div class="g-item"><div class="g-ph"><div class="ico">♥</div></div></div>
+            </div>
+        </div>
+    </div>
+-->
+<!-- ════════════ FOOTER ════════════ -->
+<footer>
+    <div class="ft-names">Martín &amp; Maiten</div>
+    <div class="ft-tag">Mayo 2026</div>
+</footer>
+
+<script src="js/overlay.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
