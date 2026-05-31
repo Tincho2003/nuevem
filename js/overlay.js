@@ -166,12 +166,37 @@ function launchFlowers() {
 
 // ── Aceptar → flores cubren pantalla ──────────
 function acceptInvite() {
+    console.log('[OVERLAY] acceptInvite called');
     launchFlowers();
     setTimeout(() => {
+        console.log('[OVERLAY] Hiding overlay and restoring scroll');
         overlayEl.style.display  = 'none';
         document.body.style.overflow = '';
     }, 350);
 }
 
 // Bloquear scroll mientras el overlay está visible
+console.log('[OVERLAY] Script loaded, blocking scroll');
 document.body.style.overflow = 'hidden';
+
+// Show hint after 10 seconds if user hasn't interacted
+let hintTimer = setTimeout(() => {
+    console.log('[OVERLAY] Showing hint');
+    const hint = document.createElement('div');
+    hint.className = 'overlay-hint';
+    hint.textContent = 'hace click en el corazon ♥';
+    ovIntroEl.appendChild(hint);
+}, 10000);
+
+// Clear hint timer if user clicks the heart
+ovHeartBig.addEventListener('click', () => {
+    clearTimeout(hintTimer);
+});
+
+// Clear hint timer if user clicks Sí or No
+btnSi.addEventListener('click', () => {
+    clearTimeout(hintTimer);
+});
+btnNo.addEventListener('click', () => {
+    clearTimeout(hintTimer);
+});

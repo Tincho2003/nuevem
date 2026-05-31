@@ -51,165 +51,237 @@
     </div>
 </section>
 
-<div id="contador" class="full-bleed" style="padding: 10rem 2rem !important;">
-    <div class="inner" style="text-align:center;">
-        <div class="sec-title">Todavía es un secreto 🤫🤫</div>
-        <div class="sec-sub">Jejeje ♥</div>
+<div id="contador" class="full-bleed">
+    <div class="inner" style="text-align:center">
+        <div class="eyebrow fi">el tiempo vuela cuando estás con vos</div>
+        <div class="sec-title fi">Nuestro tiempo juntos</div>
+        <div class="counters-grid fi">
+            <div class="counter-card">
+                <div class="cnt-num" id="dias-novios">—</div>
+                <div class="cnt-unit">días</div>
+                <div class="cnt-label">de novios</div>
+            </div>
+            <div class="counter-card">
+                <div class="cnt-num" id="dias-salida">—</div>
+                <div class="cnt-unit">días</div>
+                <div class="cnt-label">de nuestra primera salida</div>
+            </div>
+            <div class="counter-card">
+                <div class="cnt-num" id="dias-conocidos">—</div>
+                <div class="cnt-unit">días</div>
+                <div class="cnt-label">de conocernos</div>
+            </div>
+        </div>
     </div>
 </div>
-<!-- 
-    ════════════ CONTADOR ════════════ 
-    <div id="contador" class="full-bleed">
-        <div class="inner" style="text-align:center">
-            <div class="eyebrow fi">el tiempo vuela cuando estás con vos</div>
-            <div class="sec-title fi">Nuestro tiempo juntos</div>
-            <div class="counters-grid fi">
 
-                <div class="counter-card">
-                    <div class="cnt-num" id="dias-novios">—</div>
-                    <div class="cnt-unit">días</div>
-                    <div class="cnt-label">de novios</div>
+<!-- ════════════ ITINERARIO ════════════ -->
+<div id="agenda" class="full-bleed">
+    <div class="inner" style="text-align:center">
+        <div class="eyebrow fi">Nuestro plan</div>
+        <div class="sec-title fi">El itinerario</div>
+        <div class="sec-sub fi">Momentos que vamos a compartir ♥</div>
+
+        <!-- DOMINGO 14 DE JUNIO -->
+        <div class="itinerario-fecha">
+            <h3>Domingo 14 de Junio</h3>
+            <div class="carousel-container">
+                <button class="carousel-btn carousel-prev" id="btn-prev-carousel-1" onclick="carouselPrev('carousel-1')">‹</button>
+                <div class="carousel-viewport" id="carousel-1">
+                    <div class="carousel-track">
+                        <div class="carousel-item">
+                            <div class="carousel-card">
+                                <div class="card-time">MEDIODÍA</div>
+                                <div class="card-title">Te paso a buscar</div>
+                                <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWlwOXV4bzBlb3p6OXM1dmwxaGM0dDVxdmNoNHN4aGp6YjYxdm5kbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/0OZ66yEuTboDASUL2j/giphy.gif" alt="pareja en auto" class="card-gif">
+                                <p>Vamos juntos en el auto, listos para una tarde increíble</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="carousel-card">
+                                <div class="card-time">TARDE</div>
+                                <div class="card-title">Vamos a comer!</div>
+                                <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHYxdXoxNmdwdTZkNjFzamUwdW9hN2lhYnRnOWNqcHFyb3FpM25lbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kJskc34OUQm0nFsCi8/giphy.gif" alt="pareja comiendo" class="card-gif">
+                                <p>Compartimos una comida deliciosa</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="carousel-card">
+                                <div class="card-time">TARDE</div>
+                                <div class="card-title">¡Ronda en el DOT!</div>
+                                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2IzejdvanZxaGE0dTd0bDNlenh1eHZmYzg0dmc3ZnF6bHl4ZHNrbCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/kG7L1w9gk6NY8iupm6/giphy.gif" alt="pareja jugando" class="card-gif">
+                                <p>Minigolf y competencia amistosa</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="carousel-card">
+                                <div class="card-time">ATARDECER</div>
+                                <div class="card-title">Un cafecito ☕</div>
+                                <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXBoamZkc29qcTd3cWF5M21yaW9mYjIzamdveTIxYmQ3YWlwcnI0MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WseD9PsGCf6iyyU8E1/giphy.gif" alt="pareja con café" class="card-gif">
+                                <p>Conversando y disfrutando el atardecer</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="carousel-card">
+                                <div class="card-time">NOCHE</div>
+                                <div class="card-title">Bridgerton & Mimos</div>
+                                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjN6amV0ejBncXJ2b3RndXE3MXBreXNreXZuOHM1amw2N2R5bGszZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0EoAl1ECVSSWuwr6/giphy.gif" alt="pareja viendo netflix" class="card-gif">
+                                <p>Netflix, mimos, y toda la atmósfera romántica</p>
+                            </div>
+                        </div>
+
+                        <!-- Diapositivas de desbloqueo y miércoles -->
+                        <div class="carousel-item carousel-item--unlock">
+                            <div class="carousel-card carousel-card--unlock">
+                                <div class="card-unlock-text">Fin</div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item carousel-item--unlock">
+                            <div class="carousel-card carousel-card--unlock">
+                                <div class="card-unlock-text">...</div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item carousel-item--unlock">
+                            <div class="carousel-card carousel-card--unlock">
+                                <div class="card-unlock-text">O tal vez no</div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item carousel-item--unlock">
+                            <div class="carousel-card carousel-card--unlock">
+                                <div class="card-unlock-text">...</div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item carousel-item--unlock">
+                            <div class="carousel-card carousel-card--unlock">
+                                <div class="card-unlock-text">Jejeje</div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item carousel-item--wednesday">
+                            <div class="carousel-card carousel-card--wednesday">
+                                <div class="extra-badge-stamp">EXTRA SORPRESA!<br>MIÉRCOLES 17</div>
+                                <div class="card-time">¿QUÉ MÁS?</div>
+                                <div class="card-title">Aún hay más...</div>
+                                <p style="font-size: 3rem; margin-top: 2rem;">🎉</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item carousel-item--wednesday">
+                            <div class="carousel-card carousel-card--wednesday">
+                                <div class="card-time">MIÉRCOLES 17 DE JUNIO</div>
+                                <div class="card-title">Parte 1</div>
+                                <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ajhrdHZkNTZ4bzcxeGVjdmo0cG5uczkwN2R0eXMxY2U5a2xscG90eCZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/vB6GQ7Ogc6j4I/giphy.gif" alt="pareja" class="card-gif">
+                                <p>Algo especial te espera...</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item carousel-item--wednesday">
+                            <div class="carousel-card carousel-card--wednesday">
+                                <div class="card-time">MIÉRCOLES 17 DE JUNIO</div>
+                                <div class="card-title">Parte 2</div>
+                                <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ajhrdHZkNTZ4bzcxeGVjdmo0cG5uczkwN2R0eXMxY2U5a2xscG90eCZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/vB6GQ7Ogc6j4I/giphy.gif" alt="pareja" class="card-gif">
+                                <p>La sorpresa continúa...</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item carousel-item--wednesday">
+                            <div class="carousel-card carousel-card--wednesday">
+                                <div class="card-time">MIÉRCOLES 17 DE JUNIO</div>
+                                <div class="card-title">Parte 3</div>
+                                <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ajhrdHZkNTZ4bzcxeGVjdmo0cG5uczkwN2R0eXMxY2U5a2xscG90eCZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/vB6GQ7Ogc6j4I/giphy.gif" alt="pareja" class="card-gif">
+                                <p>Cada momento es especial...</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item carousel-item--wednesday">
+                            <div class="carousel-card carousel-card--wednesday">
+                                <div class="card-time">MIÉRCOLES 17 DE JUNIO</div>
+                                <div class="card-title">Parte 4</div>
+                                <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ajhrdHZkNTZ4bzcxeGVjdmo0cG5uczkwN2R0eXMxY2U5a2xscG90eCZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/vB6GQ7Ogc6j4I/giphy.gif" alt="pareja" class="card-gif">
+                                <p>¡Te amo! ♥</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="counter-card">
-                    <div class="cnt-num" id="dias-salida">—</div>
-                    <div class="cnt-unit">días</div>
-                    <div class="cnt-label">de nuestra primera salida</div>
-                </div>
-
-                <div class="counter-card">
-                    <div class="cnt-num" id="dias-conocidos">—</div>
-                    <div class="cnt-unit">días</div>
-                    <div class="cnt-label">de conocernos</div>
-                </div>
-
+                <button class="carousel-btn carousel-next" id="btn-next-carousel-1" onclick="carouselNext('carousel-1')">›</button>
+                <button class="carousel-lock-overlay hidden" id="btn-lock-carousel-1" onclick="unlockLock('carousel-1')" title="Abre el candado">🔒</button>
+                <button class="carousel-key hidden" id="btn-key-carousel-1" onclick="unlockKey('carousel-1')" title="Llave para desbloquear">🔑</button>
             </div>
         </div>
     </div>
+</div>
 
-
-     ════════════ AGENDA ════════════ 
-    <div id="agenda" class="full-bleed">
-        <div class="inner" style="text-align:center">
-            <div class="eyebrow fi">lo que viene</div>
-            <div class="sec-title fi">El plan del día</div>
-            <div class="date-badge fi">21 · Mayo · 2026</div>
-
-            <div class="agenda-program">
-                <div class="ap-item">
-                    <div class="ap-time">18:00</div>
-                    <div class="ap-content">
-                        <div class="ap-icon">🌸</div>
-                        <div class="ap-title">Encuentro en nuestro lugar</div>
-                        <div class="ap-desc">El inicio de una noche muy especial</div>
-                    </div>
-                </div>
-                <div class="ap-item">
-                    <div class="ap-time">19:30</div>
-                    <div class="ap-content">
-                        <div class="ap-icon">🥂</div>
-                        <div class="ap-title">Brindis por nosotros</div>
-                        <div class="ap-desc">Por todo lo que construimos y lo que viene</div>
-                    </div>
-                </div>
-                <div class="ap-item">
-                    <div class="ap-time">20:30</div>
-                    <div class="ap-content">
-                        <div class="ap-icon">🕯️</div>
-                        <div class="ap-title">Cena romántica</div>
-                        <div class="ap-desc">Una mesa solo para los dos</div>
-                    </div>
-                </div>
-                <div class="ap-item">
-                    <div class="ap-time">22:00</div>
-                    <div class="ap-content">
-                        <div class="ap-icon">🌙</div>
-                        <div class="ap-title">Paseo bajo las estrellas</div>
-                        <div class="ap-desc">De la mano, como siempre</div>
-                    </div>
-                </div>
-                <div class="ap-item">
-                    <div class="ap-time">23:00</div>
-                    <div class="ap-content">
-                        <div class="ap-icon">🎁</div>
-                        <div class="ap-title">La sorpresa ✨</div>
-                        <div class="ap-desc">Eso no se cuenta… ya lo vas a ver</div>
-                    </div>
-                </div>
+<div id="countdown" class="full-bleed">
+    <div class="inner" style="text-align:center">
+        <div class="eyebrow fi" style="color:var(--gold);">nos encontramos en</div>
+        <div class="sec-title fi">9 de Junio, 2026</div>
+        <div class="cd-grid fi">
+            <div class="cd-unit">
+                <div class="cd-num" id="cd-days">--</div>
+                <div class="cd-label">días</div>
+            </div>
+            <div class="cd-sep">:</div>
+            <div class="cd-unit">
+                <div class="cd-num" id="cd-hours">--</div>
+                <div class="cd-label">horas</div>
+            </div>
+            <div class="cd-sep">:</div>
+            <div class="cd-unit">
+                <div class="cd-num" id="cd-mins">--</div>
+                <div class="cd-label">minutos</div>
+            </div>
+            <div class="cd-sep">:</div>
+            <div class="cd-unit">
+                <div class="cd-num" id="cd-secs">--</div>
+                <div class="cd-label">segundos</div>
             </div>
         </div>
     </div>
+</div>
 
-     ════════════ COUNTDOWN ════════════
-    <div id="countdown" class="full-bleed">
-        <div class="inner" style="text-align:center">
-            <div class="eyebrow fi" style="color:var(--gold);opacity:.7">nos encontramos en</div>
-            <div class="sec-title fi" style="color:white">9 de Junio, 2026</div>
+<div id="carta" class="section-wrap" style="text-align:center">
+    <div class="eyebrow fi">desde el corazón</div>
+    <div class="sec-title fi">Para vos</div>
+    <div class="sec-sub fi">Algunas cosas que no siempre se dicen pero se sienten</div>
+    <div class="letter fi">
+        <div class="letter-body">
+            Hace un año apareció alguien que cambió la forma en que veo el mundo.
+            No lo planeé, no lo busqué especialmente —&nbsp;simplemente pasó,
+            como pasan las cosas que realmente importan.
+            <br><br>
+            Hoy, con 9 meses de novios y 12 de conocernos, solo puedo decir una cosa:
+            gracias por elegirme cada día. Por las charlas que no terminan,
+            por los silencios que no incomodan, por hacerme reír cuando más lo necesito.
+            <br><br>
+            Esto es solo el principio. Y yo quiero estar en cada capítulo.
+        </div>
+        <div class="letter-sign">Con todo mi amor, M ♥</div>
+    </div>
+</div>
 
-            <div class="cd-grid fi">
-                <div class="cd-unit">
-                    <div class="cd-num" id="cd-days">--</div>
-                    <div class="cd-label">días</div>
-                </div>
-                <div class="cd-sep">:</div>
-                <div class="cd-unit">
-                    <div class="cd-num" id="cd-hours">--</div>
-                    <div class="cd-label">horas</div>
-                </div>
-                <div class="cd-sep">:</div>
-                <div class="cd-unit">
-                    <div class="cd-num" id="cd-mins">--</div>
-                    <div class="cd-label">minutos</div>
-                </div>
-                <div class="cd-sep">:</div>
-                <div class="cd-unit">
-                    <div class="cd-num" id="cd-secs">--</div>
-                    <div class="cd-label">segundos</div>
-                </div>
-            </div>
+<div id="galeria" class="full-bleed">
+    <div class="inner" style="text-align:center">
+        <div class="eyebrow fi">nuestros momentos</div>
+        <div class="sec-title fi">Nuestra galería</div>
+        <div class="sec-sub fi">Los recuerdos que guardamos</div>
+        <div class="gallery-grid fi">
+            <div class="g-item"><div class="g-ph"><div class="ico">📷</div><div class="lbl">tu foto favorita</div></div></div>
+            <div class="g-item"><div class="g-ph"><div class="ico">🌸</div></div></div>
+            <div class="g-item"><div class="g-ph"><div class="ico">✨</div></div></div>
+            <div class="g-item"><div class="g-ph"><div class="ico">🥂</div></div></div>
+            <div class="g-item"><div class="g-ph"><div class="ico">🌙</div></div></div>
+            <div class="g-item"><div class="g-ph"><div class="ico">♥</div></div></div>
         </div>
     </div>
-
-    ════════════ CARTA ════════════ 
-    <div id="carta" class="section-wrap" style="text-align:center">
-        <div class="eyebrow fi">desde el corazón</div>
-        <div class="sec-title fi">Para vos</div>
-        <div class="sec-sub fi">Algunas cosas que no siempre se dicen pero se sienten</div>
-
-        <div class="letter fi">
-            <div class="letter-body">
-                Hace un año apareció alguien que cambió la forma en que veo el mundo.
-                No lo planeé, no lo busqué especialmente —&nbsp;simplemente pasó,
-                como pasan las cosas que realmente importan.
-                <br><br>
-                Hoy, con 9 meses de novios y 12 de conocernos, solo puedo decir una cosa:
-                gracias por elegirme cada día. Por las charlas que no terminan,
-                por los silencios que no incomodan, por hacerme reír cuando más lo necesito.
-                <br><br>
-                Esto es solo el principio. Y yo quiero estar en cada capítulo.
-            </div>
-            <div class="letter-sign">Con todo mi amor, M ♥</div>
-        </div>
-    </div>
-
-     ════════════ GALERÍA ════════════ 
-    <div id="galeria" class="full-bleed">
-        <div class="inner" style="text-align:center">
-            <div class="eyebrow fi">nuestros momentos</div>
-            <div class="sec-title fi">Nuestra galería</div>
-            <div class="sec-sub fi">Los recuerdos que guardamos</div>
-
-            <div class="gallery-grid fi">
-                <div class="g-item"><div class="g-ph"><div class="ico">📷</div><div class="lbl">tu foto favorita</div></div></div>
-                <div class="g-item"><div class="g-ph"><div class="ico">🌸</div></div></div>
-                <div class="g-item"><div class="g-ph"><div class="ico">✨</div></div></div>
-                <div class="g-item"><div class="g-ph"><div class="ico">🥂</div></div></div>
-                <div class="g-item"><div class="g-ph"><div class="ico">🌙</div></div></div>
-                <div class="g-item"><div class="g-ph"><div class="ico">♥</div></div></div>
-            </div>
-        </div>
-    </div>
--->
+</div>
 <!-- ════════════ FOOTER ════════════ -->
 <footer>
     <div class="ft-names">Martín &amp; Maiten</div>
